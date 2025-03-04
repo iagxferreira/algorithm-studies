@@ -1,1 +1,1 @@
-# math-studies
+# latex-studies
