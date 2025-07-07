@@ -26,12 +26,24 @@ func (node *Node) Insert(value int) {
 		}
 	}
 }
+
+func (node *Node) Search(value int) bool {
+	if node == nil {
+		return false
+	}
+	if node.Key < value {
+		return node.Right.Search(value)
+	} else if node.Key > value {
+		return node.Left.Search(value)
+	}
+	return true
+}
+
 func main() {
 	tree := &Node{Key: 100}
-	tree.Insert(50)
-	fmt.Println(tree)
-	fmt.Println(tree.Left)
+	tree.Insert(200)
+	tree.Insert(300)
 	out, _ := json.Marshal(tree)
 	fmt.Println(string(out))
-
+	fmt.Println(tree.Search(400))
 }
