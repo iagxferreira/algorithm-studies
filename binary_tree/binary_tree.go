@@ -1,9 +1,4 @@
-package main
-
-import (
-	"encoding/json"
-	"fmt"
-)
+package binary_tree
 
 type Node struct {
 	Key   int
@@ -37,13 +32,4 @@ func (node *Node) Search(value int) bool {
 		return node.Left.Search(value)
 	}
 	return true
-}
-
-func main() {
-	tree := &Node{Key: 100}
-	tree.Insert(200)
-	tree.Insert(300)
-	out, _ := json.Marshal(tree)
-	fmt.Println(string(out))
-	fmt.Println(tree.Search(400))
 }
