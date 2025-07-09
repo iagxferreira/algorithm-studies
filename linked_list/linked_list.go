@@ -1,39 +1,44 @@
-package main
+package linked_list
 
 import (
+	"algorithm_studies/linked_list/node"
 	"encoding/json"
 	"fmt"
-	"linked_list/node"
 )
 
 type LinkedList struct {
-	Head *node.LinkedListNode
-	Tail *node.LinkedListNode
+	Head   *node.LinkedListNode
+	Tail   *node.LinkedListNode
+	Length int
 }
 
 func NewLinkedList() *LinkedList {
 	return &LinkedList{
-		Head: nil,
-		Tail: nil,
+		Head:   nil,
+		Tail:   nil,
+		Length: 0,
 	}
 }
 
-func (linkedList *LinkedList) Insert(data int32) {
+func (linkedList *LinkedList) Insert(data int) {
 	node := node.NewLinkedListNode(data)
 	if linkedList.Head == nil {
 		linkedList.Head = node
 		linkedList.Tail = node
+		linkedList.Length = 1
 		return
 	}
 
 	linkedList.Tail.Next = node
 	linkedList.Tail = node
+	linkedList.Length += 1
 }
 
-func (linkedList *LinkedList) Unshift(data int32) {
+func (linkedList *LinkedList) Unshift(data int) {
 	node := node.NewLinkedListNode(data)
 	node.Next = linkedList.Head
 	linkedList.Head = node
+	linkedList.Length += 1
 }
 
 func (linkedList *LinkedList) Walk() {
@@ -47,14 +52,4 @@ func (linkedList *LinkedList) Walk() {
 func (linkedList *LinkedList) Show() {
 	serialized, _ := json.Marshal(linkedList)
 	fmt.Println(string(serialized))
-}
-func main() {
-	linkedList := NewLinkedList()
-	linkedList.Insert(10)
-	linkedList.Insert(20)
-	linkedList.Insert(40)
-	linkedList.Insert(30)
-	linkedList.Unshift(20)
-	linkedList.Walk()
-	linkedList.Show()
 }
