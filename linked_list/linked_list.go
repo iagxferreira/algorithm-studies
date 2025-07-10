@@ -49,7 +49,22 @@ func (linkedList *LinkedList) Walk() {
 	}
 }
 
-func (linkedList *LinkedList) Show() {
+func (linkedList *LinkedList) Show() string {
 	serialized, _ := json.Marshal(linkedList)
 	fmt.Println(string(serialized))
+	return string(serialized)
+}
+
+func (linkedList *LinkedList) Reverse() *LinkedList {
+	previousHead := linkedList.Head
+	var node *node.LinkedListNode
+	for linkedList.Head != nil {
+		temp := linkedList.Head.Next
+		linkedList.Head = node
+		node = linkedList.Head
+		linkedList.Head = temp
+	}
+
+	linkedList.Tail = previousHead
+	return linkedList
 }
