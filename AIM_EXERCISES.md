@@ -3,15 +3,11 @@ Focus: Grasp fundamental patterns like sliding window, two pointers, prefix sum,
 
 Arrays & Hashing (15)
 
-    Two Sum (Easy)
-
-    Valid Anagram (Easy)
-
-    Contains Duplicate (Easy)
-
-    Group Anagrams (Medium)
-
-    Top K Frequent Elements (Medium)
+- [x] Two Sum (Easy)
+- [ ] Valid Anagram (Easy)
+- [ ] Contains Duplicate (Easy)
+- [ ] Group Anagrams (Medium)
+- [x] Top K Frequent Elements (Medium)
 
     Product of Array Except Self (Medium)
 
