@@ -1,33 +1,37 @@
+Topics:
+
+- [] Arrays and hashing
+- [] Two pointers
+- [] Sliding Window
+- [] Binary Search
+- [] Linked list
+- [] Trees
+- [] Heap/Priority Queue
+- [] Graphs
+
+
+
+
 Phase 1: Core Patterns (Easy → Medium)
 Focus: Grasp fundamental patterns like sliding window, two pointers, prefix sum, etc.
 
 Arrays & Hashing (15)
 
 - [x] Two Sum (Easy)
-- [ ] Valid Anagram (Easy)
+- [x] Valid Anagram (Easy)
 - [ ] Contains Duplicate (Easy)
 - [ ] Group Anagrams (Medium)
 - [x] Top K Frequent Elements (Medium)
-
-    Product of Array Except Self (Medium)
-
-    Maximum Subarray (Easy)
-
-    Merge Intervals (Medium)
-
-    Insert Interval (Hard)
-
-    Set Matrix Zeroes (Medium)
-
-    Spiral Matrix (Medium)
-
-    Rotate Image (Medium)
-
-    Longest Consecutive Sequence (Hard)
-
-    Subarray Sum Equals K (Medium)
-
-    Maximum Product Subarray (Medium)
+- [ ] Product of Array Except Self (Medium)
+- [ ] Maximum Subarray (Easy)
+- [ ] Merge Intervals (Medium)
+- [ ] Insert Interval (Hard)
+- [ ] Set Matrix Zeroes (Medium)
+- [ ] Spiral Matrix (Medium)
+- [ ] Rotate Image (Medium)
+- [ ] Longest Consecutive Sequence (Hard)
+- [ ] Subarray Sum Equals K (Medium)
+- [ ] Maximum Product Subarray (Medium)
 
 
 Phase 2: Mastery of Patterns (Medium → Hard)
@@ -59,10 +63,10 @@ Binary Search / Searching (10)
 35. Find First and Last Position of Element in Sorted Array (Medium)
 
 Linked Lists (10)
-36. Reverse Linked List (Easy)
-37. Merge Two Sorted Lists (Easy)
+- [x] Reverse Linked List (Easy)
+- [x] Merge Two Sorted Lists (Easy)
 38. Linked List Cycle (Easy)
-39. Remove Nth Node From End (Medium)
+- [x] Remove Nth Node From End (Medium)
 40. Reorder List (Medium)
 41. Copy List with Random Pointer (Medium)
 42. Add Two Numbers (Medium)
@@ -72,7 +76,7 @@ Linked Lists (10)
 
 
 Trees & Graphs (15)
-46. Maximum Depth of Binary Tree (Easy)
+- [x] Maximum Depth of Binary Tree (Easy)
 47. Same Tree (Easy)
 48. Invert Binary Tree (Easy)
 49. Binary Tree Level Order Traversal (Medium)
@@ -95,7 +99,7 @@ Focus: Recursion, DP, Tries, Greedy, Union Find.
 
 Backtracking (10)
 61. Subsets (Medium)
-62. Permutations (Medium)
+- [x] Permutations (Medium)
 63. Combination Sum (Medium)
 64. Word Search (Medium)
 65. N-Queens (Hard)
@@ -141,3 +145,15 @@ Greedy / Union Find / Heaps / Tries (15)
 
 
 Grind75 - https://www.techinterviewhandbook.org/grind75/
+
+Bonuses
+2272. Substring With Largest Variance
+
+2281. Sum of Total Strength of Wizards
+
+1639. Number of Ways to Form a Target String Given a Dictionary
+
+2055. Plates Between Candles
+
+1606. Find Servers That Handled Most Number of Requests
+
