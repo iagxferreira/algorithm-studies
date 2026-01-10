@@ -1,7 +1,6 @@
 # algorithm-studies
 
 content to be covered:
-
 - [ ] arrays
 - [ ] linked list
 - [ ] stacks
@@ -16,3 +15,13 @@ content to be covered:
 - [ ] dinamic programming
 - [ ] dfs
 - [ ] bfs
+
+# Testing
+```shell
+pytest -v
+```
+
+# With coverage
+```shell
+pytest --cov=src --cov-report=term
+```
