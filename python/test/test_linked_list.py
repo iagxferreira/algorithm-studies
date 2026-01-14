@@ -1,6 +1,12 @@
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../src"))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../src'))
+
 import pytest
-from linked_list.node import ListNode
 from linked_list.linked_list import LinkedList
+from linked_list.node import ListNode
 
 
 class TestLinkedList:
