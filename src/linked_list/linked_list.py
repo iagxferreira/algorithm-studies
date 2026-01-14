@@ -2,7 +2,7 @@ from .node import ListNode
 
 
 class LinkedList:
-    def __init__(self, head: ListNode):
+    def __init__(self, head: ListNode = None):
         self.head = head
 
     def add(self, node: ListNode):
